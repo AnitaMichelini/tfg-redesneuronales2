@@ -1,0 +1,17 @@
+.img-profile {
+    max-width: 20%;
+    /* Ajusta el ancho máximo según tus necesidades */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+    margin: 20px auto;
+    /* Centra la imagen vertical y horizontalmente */
+    border-radius: 15px;
+    /* Esquinas redondeadas para un diseño moderno */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    /* Agrega una sombra suave */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.text-white {
+    color: white;
+}

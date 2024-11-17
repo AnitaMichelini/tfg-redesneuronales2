@@ -1,0 +1,129 @@
+/* Contenedor Principal */
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Ocupa toda la altura de la pantalla */
+    width: 100%;
+    /* Ocupa todo el ancho */
+    box-sizing: border-box;
+    /* Incluye padding y border en el tamaño total */
+    color: #333;
+    font-family: "Arial", sans-serif;
+}
+
+
+/* Navbar */
+
+.navbar {
+    flex-shrink: 0;
+    /* Asegura que el Navbar no se reduzca */
+}
+
+
+/* Contenido */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    /* Hace que este contenido ocupe el espacio restante */
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Estilo del Título */
+
+.content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+
+/* Descripción */
+
+.content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+
+/* Imagen */
+
+.img-neuron {
+    width: 100%;
+    max-width: 400px;
+    /* Limita el tamaño máximo en pantallas grandes */
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Estilos Responsivos */
+
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 2rem;
+        /* Reduce el tamaño del título en pantallas pequeñas */
+    }
+    .content p {
+        font-size: 1rem;
+        /* Reduce el tamaño del texto */
+    }
+    .img-neuron {
+        max-width: 300px;
+        /* Reduce el tamaño máximo de la imagen */
+    }
+}
+
+@media (max-width: 480px) {
+    .content h1 {
+        font-size: 1.8rem;
+        /* Título más pequeño */
+    }
+    .content p {
+        font-size: 0.9rem;
+        /* Texto más pequeño */
+    }
+    .img-neuron {
+        max-width: 250px;
+        /* Imagen aún más pequeña */
+    }
+}
+
+.img-description {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+    font-style: italic;
+    line-height: 1.4;
+}
+
+.img-profile {
+    max-width: 20%;
+    /* Ajusta el ancho máximo según tus necesidades */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+    margin: 20px auto;
+    /* Centra la imagen vertical y horizontalmente */
+    border-radius: 15px;
+    /* Esquinas redondeadas para un diseño moderno */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    /* Agrega una sombra suave */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.img-profile:hover {
+    transform: scale(1.05);
+    /* Efecto de zoom suave al pasar el cursor */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+}

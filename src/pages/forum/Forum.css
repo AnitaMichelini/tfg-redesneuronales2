@@ -1,0 +1,84 @@
+/* Estilo general del foro */
+
+.forum-page {
+    color: white;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #4f93ce, #28527a);
+    color: white;
+    min-height: 100vh; */
+    /* Ocupa toda la pantalla */
+}
+
+.forum-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.forum-description {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.forum-form {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 30px;
+}
+
+.forum-textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    resize: vertical;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.forum-submit {
+    align-self: flex-end;
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.forum-submit:hover {
+    background: #e68900;
+}
+
+.forum-posts {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.forum-post {
+    background: white;
+    color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.forum-empty {
+    text-align: center;
+    font-style: italic;
+    color: #ddd;
+}
