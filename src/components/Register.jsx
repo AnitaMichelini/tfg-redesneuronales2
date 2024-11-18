@@ -10,7 +10,10 @@ const Register = () => {
   const [lastName, setLastName] = useState("");
   const [error, setError] = useState("");
   const navigate = useNavigate();
+<<<<<<< HEAD
   const [showModalOk, setShowModalOk] = useState(false);
+=======
+>>>>>>> ea938a800b7215092f4c9d99e734f05feb138223
 
   const handleRegister = async (e) => {
     e.preventDefault();
@@ -22,13 +25,18 @@ const Register = () => {
     };
     const resutl = await registerUser(userData);
     if (resutl.success){
+<<<<<<< HEAD
       setShowModalOk(true);
       // navigate('/home',{state:{userEmail: email}})
+=======
+      navigate('/home',{state:{userEmail: email}})
+>>>>>>> ea938a800b7215092f4c9d99e734f05feb138223
     } else {
        setError(resutl.message)
     }
 
   };
+<<<<<<< HEAD
   const closeModal = () => {
     setShowModalOk(false);
   };
@@ -39,6 +47,10 @@ const Register = () => {
 
   return (
     <>
+=======
+
+  return (
+>>>>>>> ea938a800b7215092f4c9d99e734f05feb138223
     <form onSubmit={handleRegister}>
       <h2>Registro</h2>
       {error && <p className="error">{error}</p>}
@@ -47,24 +59,37 @@ const Register = () => {
         placeholder="Nombre"
         value={firstName}
         onChange={(e) => setFirstName(e.target.value)}
+<<<<<<< HEAD
         />
+=======
+      />
+>>>>>>> ea938a800b7215092f4c9d99e734f05feb138223
       <input
         type="text"
         placeholder="Apellido"
         value={lastName}
         onChange={(e) => setLastName(e.target.value)}
+<<<<<<< HEAD
         />
+=======
+      />
+>>>>>>> ea938a800b7215092f4c9d99e734f05feb138223
       <input
         type="email"
         placeholder="Correo electrónico"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
+<<<<<<< HEAD
         />
+=======
+      />
+>>>>>>> ea938a800b7215092f4c9d99e734f05feb138223
       <input
         type="password"
         placeholder="Contraseña"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
+<<<<<<< HEAD
         />
       <button type="submit">Registrar</button>
       <a href="/">¿Ya tienes cuenta? Inicia sesión</a>
@@ -83,6 +108,12 @@ const Register = () => {
       )}
 
     </>
+=======
+      />
+      <button type="submit">Registrar</button>
+      <a href="/">¿Ya tienes cuenta? Inicia sesión</a>
+    </form>
+>>>>>>> ea938a800b7215092f4c9d99e734f05feb138223
   );
 };
 

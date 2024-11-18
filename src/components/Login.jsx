@@ -71,8 +71,13 @@ const Login = () => {
             <h3>Bienvenido al sistema <span>NEURORED</span></h3>
             <p>¿A qué sector deseas ir?</p>
             <div className="modal-buttons">
+<<<<<<< HEAD
               <button className="sector-button" onClick={() => redirectTo('/home/ninos/inicioNinos')}>Niños</button>
               <button className="sector-button" onClick={() => redirectTo('/home/adolescentes/inicioAdolescentes')}>Adolescentes</button>
+=======
+              <button className="sector-button" onClick={() => redirectTo('/home/ninos')}>Niños</button>
+              <button className="sector-button" onClick={() => redirectTo('/home/adolescentes')}>Adolescentes</button>
+>>>>>>> ea938a800b7215092f4c9d99e734f05feb138223
             </div>
           </div>
         </div>
